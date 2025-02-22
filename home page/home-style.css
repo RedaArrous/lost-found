@@ -14,19 +14,75 @@ body{
     justify-content: center;
     align-content: space-between;
     gap: 10px;
-    border-radius: 20px;
+    border-radius: 15px;
     padding: 15px;
 }
 
-.main .todo{
+.main .titles{
     flex-basis: 100%;
     background-color: #f4ebe2;
-    border-radius: 10px;
-    display: flex;
+    border-radius: 5px;
+    padding: 5px 15px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-between;
 }
-.main .todo .check{
-    width: 7%;
-    height: 100%;
+.main .titles div{
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: 796153;
+    position: relative;
+    padding-left: 15px;
+}
+.main .titles div:not(:last-child):after{
+    content: "";
+    position: absolute;
+    border-radius: 200px;
+    width: 3px;
+    height: 80%;
+    background-color: #e6d4c2;
+    top: calc(50% - 40%);
+    right: 0;
+}
+
+.main .todos .todo{
+    flex-basis: 100%;
+    background-color: #f4ebe2;
+    border-radius: 5px;
+    position: relative;
+    display: grid;
+    padding: 5px 0;
+    grid-template-columns: 5% repeat(4, 1fr);
+    justify-content: space-between;
+}
+.main .todos .todo div:first-of-type{
+    position: relative;
+}
+.main .todos .todo div:first-of-type input{
+    position: absolute;
+    top: calc(50% - 10px);
+    left: calc(50% - 10px);
+}
+.main .todos .todo .task-name{
+    color: #5c4336;
+    padding: 0 15px;
+}
+.main .todos .todo .task-time-ending{
+    color: #796153;
+    padding: 0 15px;
+}
+
+.main .todos .todo div span{
     background-color: #796153;
-    border-radius: 10px 0 0 10px;
+    padding: 0 15px;
+    width: auto;
+    border-radius: 50px;
+    color: white;
+}
+.main .todos .todo .category{
+    text-align: center;
+    background-color: #e6d4c2;
+    width: 60%;
+    border-radius: 50px;
+    color: #5c4336;
 }
