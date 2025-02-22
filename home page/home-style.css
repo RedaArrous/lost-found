@@ -63,6 +63,37 @@ body{
     top: calc(50% - 10px);
     left: calc(50% - 10px);
 }
+input[type="checkbox"] {
+    width: 18px; 
+    height: 18px;
+    appearance: none;
+    border: 2px solid #796153;
+    border-radius: 4px; 
+    background-color: transparent;
+    cursor: pointer;
+    position: relative;
+    bottom: 50px;
+    margin: 0;
+}
+
+input[type="checkbox"]:checked {
+    background-color: #796153; 
+    border-color: #5a3d2b; 
+}
+
+input[type="checkbox"]::after {
+    content: "✓";
+    font-size: 14px;
+    color: white;
+    display: none;
+    position: absolute;
+    left: 3px;
+    top: -1px;
+}
+
+input[type="checkbox"]:checked::after {
+    display: block;
+}
 .main .todos .todo .task-name{
     color: #5c4336;
     padding: 0 15px;
