@@ -26,6 +26,7 @@ form {
     justify-content: center;
     align-items: center;
     border-radius: 20px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
 }
 form input:not([type="submit"], [type="checkbox"]) {
     flex-basis: 100%;
