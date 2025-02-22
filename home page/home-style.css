@@ -2,3 +2,14 @@ body{
     font-family: "Cairo", serif;
     background-color: #f4ebe2;
 }
+.main{
+    padding: 15px;
+}
+.main .todos{
+    width: 70%;
+    margin: 30px auto;
+    background-color: #e6d4c2;
+}
+.main .todos{
+    
+}
