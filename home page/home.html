@@ -11,16 +11,46 @@
     <link href="https://fonts.googleapis.com/css2?family=Cairo:slnt,wght@-11..11,200..1000&display=swap" rel="stylesheet">
 </head>
 <body>
+    <button class="logout">
+        <img src="img/logout-2-svgrepo-com.svg" alt="Add">
+    </button>
     <div class="main" >
         <h1>To-do list</h1>
         <div class="todos">
             <div class="titles">
-                <div></div>
-                <div>Task</div>
-                <div>Time</div>
-                <div>Importancy</div>
-                <div>Category</div>
-                <div></div>
+                <div><img src="img/task-done-svgrepo-com.svg" alt=""></div>
+                <div>
+                    <img src="img/sort-by-alphabet-svgrepo-com.svg" alt="">
+                    <span>Task</span>
+                </div>
+                <div>
+                    <img src="img/date-svgrepo-com.svg" alt="">
+                    <span>Date</span>
+                </div>
+                <div>
+                    <img src="img/sort-ascending-svgrepo-com.svg" alt="">
+                    <span>Importancy</span> 
+                </div>
+                <div>
+                    <img src="img/category-svgrepo-com.svg" alt="">
+                    <span>category</span> 
+                </div>
+                <div style="margin-left: 7px;">⋮</div>
+            </div>
+            <div class="todo">
+                <div><input type="checkbox" name="task" id="task1"></div>
+                <div class="task-name">name1</div>
+                <div class="task-time-ending">date</div>
+                <div class="importancy"><span>high</span></div>
+                <div class="category">sports</div>
+                <td class="menu-container">
+                    <div class="menu-button">⋮</div>
+                    <div class="menu">
+                        <button class="edit">Edit</button>
+                        <button class="delete">Delete</button>
+                    </div>
+                </td>
+                
             </div>
             <div class="todo">
                 <div><input type="checkbox" name="task" id="task1"></div>
@@ -38,6 +68,9 @@
                 
             </div>
     </div>
+    <button class="add">
+        <img src="img/add-square-svgrepo-com.svg" alt="Add">
+    </button>
     <script src="script.js"></script>
 </body>
 </html>

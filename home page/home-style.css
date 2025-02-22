@@ -5,6 +5,13 @@ body{
 .main{
     padding: 15px;
 }
+h1{
+    text-align: center;
+    color: #796153;
+    font-size: 2.5rem;
+    margin: 0;
+    padding: 15px 0;
+}
 .main .todos{
     width: 70%;
     margin: 30px auto;
@@ -43,6 +50,19 @@ body{
     background-color: #e6d4c2;
     top: calc(50% - 40%);
     right: 0;
+}
+.main .titles div:first-of-type img{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: calc(50% - 10px);
+    left: 0;
+}
+.main .titles div img{
+    width: 25px;
+    height: 25px;
+    position: relative;
+    top: calc(50% - 12.5px);
 }
 
 .main .todos .todo{
@@ -89,6 +109,7 @@ input[type="checkbox"]::after {
     position: absolute;
     left: 3px;
     top: -1px;
+    z-index: 100;
 }
 
 input[type="checkbox"]:checked::after {
@@ -131,13 +152,14 @@ input[type="checkbox"]:checked::after {
 .menu {
     display: none;
     position: absolute;
-    background-color: #e6d4c2; /* Match your palette */
+    background-color: #e6d4c2;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     right: 0;
     top: 25px;
     min-width: 80px;
     text-align: left;
+    z-index: 10;
 }
 
 .menu button {
@@ -152,5 +174,33 @@ input[type="checkbox"]:checked::after {
 }
 
 .menu button:hover {
-    background-color: #c6ac8f; /* Slightly darker */
+    background-color: #c6ac8f; 
+}
+.add {
+    background: none;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    position: fixed; 
+    bottom: 100px;
+    right: 20px;
+}
+
+.add img {
+    width: 72px; 
+    height: 72px;
+}
+.logout {
+    background: none;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    position: fixed; 
+    top: 15px;
+    right: 20px;
+}
+
+.logout img {
+    width: 48px; 
+    height: 48px;
 }
