@@ -9,7 +9,24 @@ body{
     width: 70%;
     margin: 30px auto;
     background-color: #e6d4c2;
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: center;
+    align-content: space-between;
+    gap: 10px;
+    border-radius: 20px;
+    padding: 15px;
 }
-.main .todos{
-    
+
+.main .todo{
+    flex-basis: 100%;
+    background-color: #f4ebe2;
+    border-radius: 10px;
+    display: flex;
+}
+.main .todo .check{
+    width: 7%;
+    height: 100%;
+    background-color: #796153;
+    border-radius: 10px 0 0 10px;
 }
